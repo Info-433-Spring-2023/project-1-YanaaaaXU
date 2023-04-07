@@ -1,0 +1,22 @@
+[
+    {
+        "img": "/img/panda.jpg",
+        "name": "Michael",
+        "year": "Junior"
+    },
+    {
+        "img": "/img/Jeremy.jpg",
+        "name": "Jeremy",
+        "year": "Freshman"
+    },
+    {
+        "img": "/img/panda.jpg",
+        "name": "Michelle",
+        "year": "Sophomore"
+    },
+    {
+        "img": "/img/Joseph.jpg",
+        "name": "Joseph",
+        "year": "Sophomore"
+    }
+]

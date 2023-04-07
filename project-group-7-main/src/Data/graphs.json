@@ -1,0 +1,75 @@
+[
+  {
+    "key": "0",
+    "graphtype": "Map",
+    "country": "All",
+    "species": "Bird",
+    "infotype": "Endangered",
+    "xaxis": "Country",
+    "yaxis": "Species",
+    "meta":"Map",
+    "datawrapper":"<iframe title=\"Numbers of endangered bird species by country\" aria-label=\"a map use colors to show numbers of endangered species by country \" id=\"datawrapper-chart-sJg21\" src=\"https://datawrapper.dwcdn.net/sJg21/1/\" scrolling=\"no\" frameborder=\"0\" style=\"width: 0; min-width: 100% !important; border: none;\" height=\"367\"></iframe> <script type=\"text/javascript\">!function () { \"use strict\"; window.addEventListener(\"message\", (function (e) { if (void 0 !== e.data[\"datawrapper-height\"]) { var t = document.querySelectorAll(\"iframe\"); for (var a in e.data[\"datawrapper-height\"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data[\"datawrapper-height\"][a] + \"px\" } } })) }(); </script>" 
+  },
+
+  {
+    "key": "1",
+    "graphtype": "Bar",
+    "country": "All",
+    "species": "All",
+    "infotype": "Endangered",
+    "xaxis": "Country",
+    "yaxis": "Species",
+    "meta":"top-10",
+    "datawrapper":"<iframe title=\"Countries with most # of endangered species\"aria-label=\"a column chart shows the highest numbers of endangered species from left to right\"id=\"datawrapper-chart-TXGlI\" src=\"https://datawrapper.dwcdn.net/TXGlI/1/\" scrolling=\"no\"frameborder=\"0\" style=\"width: 0; min-width: 100% !important; border: none;\"height=\"400\"></iframe><script type=\"text/javascript\">!function () { \"use strict\"; window.addEventListener(\"message\", (function (e) { if (void 0 !== e.data[\"datawrapper-height\"]) { var t = document.querySelectorAll(\"iframe\"); for (var a in e.data[\"datawrapper-height\"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data[\"datawrapper-height\"][a] + \"px\" } } })) }();" 
+  },
+
+  {
+    "key": "2",
+    "graphtype": "Pie",
+    "country": "All",
+    "species": "All",
+    "infotype": "Endangered",
+    "xaxis": "Proportion",
+    "yaxis": "Species",
+    "meta":"Proportion",
+    "datawrapper":"<iframe title=\"Proportion of species that are endangered \" aria-label=\"a donut chart shows endangered percentage\" id=\"datawrapper-chart-b48tf\" src=\"https://datawrapper.dwcdn.net/b48tf/1/\" scrolling=\"no\" frameborder=\"0\" style=\"width: 0; min-width: 100% !important; border: none;\" height=\"409\"></iframe> <script type=\"text/javascript\">!function () { \"use strict\"; window.addEventListener(\"message\", (function (e) { if (void 0 !== e.data[\"datawrapper-height\"]) { var t = document.querySelectorAll(\"iframe\"); for (var a in e.data[\"datawrapper-height\"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data[\"datawrapper-height\"][a] + \"px\" } } })) }();</script>"
+  },
+
+  {
+    "key": "3",
+    "graphtype": "Bar",
+    "country": "Australia",
+    "species": "All",
+    "infotype": "All",
+    "xaxis": "Count",
+    "yaxis": "Info Type",
+    "meta":"All",
+    "datawrapper":"<iframe title=\"All Species Data In Australia\" aria-label=\"Bar Chart\" id=\"datawrapper-chart-24MfI\" src=\"https://datawrapper.dwcdn.net/24MfI/1/\" scrolling=\"no\" frameborder=\"0\" style=\"width: 0; min-width: 100% !important; border: none;\" height=\"334\"></iframe><script type=\"text/javascript\">!function(){\"use strict\";window.addEventListener(\"message\",(function(e){if(void 0!==e.data[\"datawrapper-height\"]){var t=document.querySelectorAll(\"iframe\");for(var a in e.data[\"datawrapper-height\"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data[\"datawrapper-height\"][a]+\"px\"}}}))}(); </script>"
+  },
+
+  {
+    "key": "4",
+    "graphtype": "Bar",
+    "country": "Australia",
+    "species": "Birds",
+    "infotype": "All",
+    "xaxis": "Count",
+    "yaxis": "Info Type",
+    "meta":"All",
+    "datawrapper": "<iframe title=\"Birds Data In Australia\" aria-label=\"Bar Chart\" id=\"datawrapper-chart-L14Fj\" src=\"https://datawrapper.dwcdn.net/L14Fj/3/\" scrolling=\"no\" frameborder=\"0\" style=\"width: 0; min-width: 100% !important; border: none;\" height=\"382\"></iframe><script type=\"text/javascript\">!function(){\"use strict\";window.addEventListener(\"message\",(function(e){if(void 0!==e.data[\"datawrapper-height\"]){var t=document.querySelectorAll(\"iframe\");for(var a in e.data[\"datawrapper-height\"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data[\"datawrapper-height\"][a]+\"px\"}}}))}(); </script>"
+  },
+
+  {
+    "key": "5",
+    "graphtype": "Bar",
+    "country": "Australia",
+    "species": "Birds",
+    "infotype": "Critical",
+    "xaxis": "Count",
+    "yaxis": "Info Type",
+    "meta":"All",
+    "datawrapper": "<iframe title=\"Critical Birds Data In Australia\" aria-label=\"Bar Chart\" id=\"datawrapper-chart-OIcDX\" src=\"https://datawrapper.dwcdn.net/OIcDX/1/\" scrolling=\"no\" frameborder=\"0\" style=\"width: 0; min-width: 100% !important; border: none;\" height=\"142\"></iframe><script type=\"text/javascript\">!function(){\"use strict\";window.addEventListener(\"message\",(function(e){if(void 0!==e.data[\"datawrapper-height\"]){var t=document.querySelectorAll(\"iframe\");for(var a in e.data[\"datawrapper-height\"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data[\"datawrapper-height\"][a]+\"px\"}}}))}(); </script>"
+  }
+
+
+]

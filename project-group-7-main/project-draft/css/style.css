@@ -1,0 +1,430 @@
+/* Styling for body */
+body {
+    font-family: "Noto Sans", Arial, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+}
+
+/* Styling for all headers and text used on our page */
+h1,
+h2 {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+label.heading {
+    font-size: 1.5rem;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Others overall */
+div.body {
+    flex-grow: 1;
+}
+
+
+main {
+    flex: 1;
+}
+
+div.container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+}
+
+div.main {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Specific: styling for paragraphs */
+
+p {
+    margin: 10px;
+}
+
+.paragraphs .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.paragraph {
+    margin: 0 5rem;
+}
+
+/* Specific: styling for header */
+header {
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+/*Animation stylings*/
+.animate-content {
+    display: block;
+    opacity: 0;
+    animation: revealText .5s forwards;
+}
+
+.second-anim {
+    animation-delay: .175s;
+}
+
+.third-anim {
+    animation-delay: .25s;
+}
+
+.fourth-anim {
+    animation-delay: .325s;
+}
+
+@keyframes revealText {
+    from {
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Specific: styling for (small) navigation tab*/
+a.small img {
+    size: 40px;
+    margin-top: 10px;
+}
+
+header h1 {
+    padding-right: 40px
+}
+
+@media only screen and (min-width: 600px) { 
+    .smallDrop{
+        display: none;
+        float: left;
+    }
+}
+/* Specific: styling for (big) navigation tab*/
+nav.big {
+    text-align: center;
+    display: none;
+}
+
+nav.big .container {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1px;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: black;
+    font-size: 1.3rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: #413b3b;
+    border-bottom: solid 0.1rem #000000;
+    transition: ease-in .25s;
+}
+
+/*Specific: styling for the introduction*/
+.introduction .container {
+    color: white;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    background-image: url('../img/minimalist-forest-wallpapers.jpg');
+    background-color: rgb(33, 133, 44);
+    background-size: cover;
+    background-position: center;
+}
+
+div.box {
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 1em;
+    margin: 1em 15em;
+    flex: 1;
+}
+
+.introduction button,
+.animals button {
+    border-radius: 8px;
+    background-color: rgba(4, 170, 109, 0.75);
+    border: none;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2px 2px
+}
+
+.introduction button:hover,
+.introduction button:focus,
+.introduction button:active,
+.animals button:hover,
+.animals button:focus,
+.animals button:active {
+    background-color: rgba(33, 133, 44, 0.55);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+    animation: pulsate 1s ease-in-out;
+
+
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 25px rgba(4, 170, 109, 0.75), 0 0 50px #ADFF2F;
+    }
+}
+
+/*Specific: styling for search bar */
+
+.search div {
+    margin: 1rem 0;
+}
+
+.search select {
+    background-color: rgba(33, 133, 44, 0.75);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.search input {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgba(33, 133, 44, 0.75);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Weird and unintuitive way to change placeholder text for search bar...
+different syntax required for different browsers */
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+.search button {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(33, 133, 44, 0.75);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search button:hover,
+.search button:focus,
+.search button:active {
+    color: black;
+
+}
+
+div.label {
+    flex-direction: column;
+}
+
+
+
+/*Specific: styling for graphs*/
+div .graphs {
+    background-color: #eee;
+    padding: 1em;
+    flex: 1;
+}
+
+div.graph-c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.graph-i {
+    flex: 1 1 250px;
+    background-color: white;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+
+}
+
+/*Specific: styling for animal section and items */
+div .animals {
+    background-color: #eee;
+    padding: 1em;
+    flex: 1;
+}
+
+div.animal-c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.animal-i {
+    flex: 0 0 300px;
+    background-color: white;
+    margin: .5rem;
+    padding: .5rem 0rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+
+}
+
+.animal-i img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.animals button {
+    border-radius: 8px;
+    background-color: rgba(4, 170, 109, 0.75);
+    border: none;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2px 2px
+}
+
+.animals button:hover {
+    animation: pulsate 1s ease-in-out;
+}
+
+/* Specific: styling for footer */
+
+footer .container {
+    background-color: rgba(33, 133, 44, 0.75);
+    color: white;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+
+}
+
+footer p {
+    margin-top: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* reactive styling */
+@media(min-width: 598px) {
+
+    .search select,
+    .search input,
+    .search button {
+        padding: 2px 10px;
+    }
+
+    .lg-screen {
+        display: none;
+    }
+}
+
+
+@media(min-width:768px) {
+
+    .search select,
+    .search input,
+    .search button {
+        padding: 2px 30px;
+    }
+
+    /* Changing menu/nav bar */
+
+    nav.big {
+        display: block;
+    }
+
+    header h1 {
+        padding-right: 0px;
+    }
+
+    a.small {
+        display: none;
+    }
+
+    .lg-screen {
+        display: inline-block;
+    }
+}
+
+@media(min-width:992px) {
+
+    .search select,
+    .search input,
+    .search button {
+        padding: 2px 40px;
+    }
+
+}

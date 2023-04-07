@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Michael Yung, Michelle Guan, Jeremy Dondoyano, Joseph Sarsozo">
+    <meta name="description" content="Team mission and team member descriptions">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300;1,400&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" 
+      type="image/png" 
+      href="img/icon.png">
+    <title>Wildlived</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        function goToNewPage()
+        {
+            var url = document.getElementById('list').value;
+            if(url != 'none') {
+                window.location = url;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- making body into a flex box-->
+    <div class="body">
+
+        <!--Title/Header-->
+        <header>
+            <div class="container">
+                <!--small expandable nav bar for smaller screen-->
+                <form class="smallDrop">
+                    <select name="list" id="list" accesskey="target">
+                        <option value='none' selected>Page</option>
+                        <option value="index.html">Home</option>
+                        <option value="theme2.html">Mini Game</option>
+                        <option value="theme3.html">Personal Impact</option>
+                    </select>
+                    <input type=button value="Go" onclick="goToNewPage()" />
+                </form>
+                <h1 class="animate-content">Wildlived</h1>
+            </div>
+
+        </header>
+
+        <!--Navigation bar for big screen-->
+        <nav class="big">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#minigame">Mini Game</a></li>
+                    <li><a href="#quiz">Personal Impact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <main>
+            <div class="main">
+
+                <section class="introduction">
+                    <div class="container">
+                    </div>
+                </section>
+
+
+            <section class="paragraphs">
+                <div class="container">
+
+                    <div class="paragraph">
+                        <h2>Our Mission:</h2>
+                    </div>
+
+                    <div class="paragraph">
+                        <p>
+                            Many people have heard about how ivory and other goods are seized from wildlife and traded
+                            illegally, however,
+                            few understand what actually happens in this process. The illegal wildlife trade (IWT) is
+                            ran by
+                            dangerous networks who
+                            show no mercy towards the animals they are poaching from. Not only are these groups harming
+                            and
+                            killing animals illegally,
+                            but they are also putting many species into risk of extinction.
+                        </p>
+                    </div>
+
+                    <div class="paragraph">
+                        <p>
+                            To make matters worse, information about these poaching groups is hard to come by, and not
+                            as
+                            accessible to the public as it should be.
+                            People buy items that could have been made by some of these poaching networks and are
+                            clueless
+                            as to
+                            what they are buying into. Furthermore,
+                            there is little to no information in the form of technology surrounding this topic, which is
+                            a
+                            problem considering how much influence information
+                            through technology has on our current population. In 2012, Google.org set up a project for
+                            people to
+                            "use technology to stop poaching".
+                            World Wildlife Fund (WWF) used this as an opportunity to launch the Wildlife Crime
+                            Technology
+                            Project (WCTP), which uses technology to
+                            address wildlife conservation issues. WWF uses technology like UAVs, artificial intelligence
+                            applications, IoT sensors, and more to spot
+                            poachers at night and to improve online information and data connectivity.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Technically humans are animals-->
+            <section class="animals">
+
+                <div class="container">
+                    <h2> Meet Our Team: </h2>
+                </div>
+
+                <div class="animal-c">
+                    <div class="animal-i">
+                        <img src="img/panda.jpg" alt="a picture of Michael">
+                        <h2 class="aboutName">Michael</h2>
+                        <p class="animal-text">This is Michael, a Junior at the University of Washington.</p>
+                        <button arial-label="Linkedin button"><a href="https://www.LinkedIn.com"  target="_blank" rel="noopener noreferrer">LinkedIn</a></button>
+                    </div>
+
+                    <div class="animal-i">
+                        <img src="img/Jeremy.jpg" alt="a picture of Jeremy">
+                        <h2 class="aboutName">Jeremy</h2>
+                        <p class="animal-text">This is Jeremy, a Freshman at the University of Washington.</p>
+                        <button arial-label="Linkedin button"><a href="https://www.linkedin.com/in/jeremy-dondoyano-953379198/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a></button>
+                    </div>
+
+                    <div class="animal-i">
+                        <img src="img/panda.jpg" alt="a picture of Michelle">
+                        <h2 class="aboutName">Michelle</h2>
+                        <p class="animal-text">This is Michelle, a Sophomore at the University of Washington.</p>
+                        <button arial-label="Linkedin button"><a href="https://www.LinkedIn.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></button>
+                    </div>
+
+                    <div class="animal-i">
+                        <img src="img/Joseph.jpg" alt="a picture of Joseph">
+                        <h2 class="aboutName">Joseph</h2>
+                        <p class="animal-text">This is Joseph, a Sophomore at the University of Washington.</p><button arial-label="Linkedin button"><a href="https://www.LinkedIn.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></button>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2022 University of Washington - The Information School</p>
+
+            </div>
+        </footer>
+
+
+    </div>
+
+
+</body>
+
+
+
+</html>

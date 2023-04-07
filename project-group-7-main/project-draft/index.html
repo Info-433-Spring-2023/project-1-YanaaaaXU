@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Michael Yung">
+    <meta name="description" content="Endangered animals">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300;1,400&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <title>Wildlived</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        function goToNewPage()
+        {
+            var url = document.getElementById('list').value;
+            if(url != 'none') {
+                window.location = url;
+            }
+        }
+    </script>
+</head>
+
+<!-- body -->
+
+<body>
+
+    <!-- making body into a flex box-->
+    <div class="body">
+        <section class='header'>
+            <!--Title/Header-->
+            <header>
+                <div class="container">
+                    <!--small expandable nav bar for smaller screen-->
+                    <form class="smallDrop">
+                        <select name="list" id="list" accesskey="target">
+                            <option value='none' selected>Page</option>
+                            <option value="index.html">Home</option>
+                            <option value="theme2.html">Mini Game</option>
+                            <option value="theme3.html">Personal Impact</option>
+                        </select>
+                        <input type=button value="Go" onclick="goToNewPage()" />
+                    </form>
+                    <h1 class="animate-content">Wildlived</h1>
+                </div>
+
+            </header>
+
+            <!--Navigation bar for big screen-->
+            <nav class="big">
+                <div class="container">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#minigame">Mini Game</a></li>
+                        <li><a href="#quiz">Personal Impact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <!--Main content-->
+        <main>
+
+            <div class="main">
+
+                <!--Introduction + About Us Link-->
+                <section class="introduction">
+                    <div class="container">
+                        <div class="box">
+                            <h2 class="animate-content second-anim">Introduction</h2>
+                            <p class="animate-content third-anim">In brief, this website is about endangered animals.
+                                Through this website we hope to spread awarness of
+                                animals that are endangered. Pulling data from various sources we have prepared graphs
+                                that will give people answers to what is going with these animals.
+                            </p>
+                            <div class="lg-screen">
+                                <p class="animate-content third-anim fourth-anim">We strive to help
+                                    people understand the severity of the sitation these animals face by being
+                                    endangered.
+                                    In addition we want to educate people on these animals, how they are
+                                    endangered, and how you can possibly help save them!
+                                </p>
+                            </div>
+                            <a href="about.html">
+                                <button>About Us</button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Search Bar-->
+                <section class="search">
+                    <label for="searchbar" class="heading">Interested in something particular?</label>
+
+                    <div class="container">
+                        <form>
+                            <div>
+                                <input type="text" placeholder="Search.." name="searchbar" id="searchbar">
+                            </div>
+                        </form>
+
+                        <div class="search">
+                            <select name="attributes" id="attributes">
+                                <option value="filter"><label for="attributes">Filter attributes</label></option>
+                                <option value="country">Country</option>
+                                <option value="type">Type</option>
+                                <option value="species">Species</option>
+                            </select>
+                        </div>
+
+                        <div class="search">
+                            <select name="graphs" id="graphs">
+                                <option value="display"><label for="graphs">Filter graph type</label></option>
+                                <option value="map">Map</option>
+                                <option value="bar">Bar graphs</option>
+                                <option value="pie">Pie Charts</option>
+                            </select>
+                        </div>
+
+                        <div class="search">
+                            <button arial-label="go button">Go! </button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!--Graphs produced, we are using place holders for now.
+                These code are temporary embedment from datawrapper (requires internect to work)-->
+                <section class="graphs">
+                    <div class="graph-c">
+
+                        <div class="graph-i">
+                            <iframe title="Proportion of species that are endangered "
+                                aria-label="a donut chart shows endangered percentage" id="datawrapper-chart-b48tf"
+                                src="https://datawrapper.dwcdn.net/b48tf/1/" scrolling="no" frameborder="0"
+                                style="width: 0; min-width: 100% !important; border: none;" height="409"></iframe>
+                            <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                            </script>
+                        </div>
+
+                        <div class="graph-i">
+                            <iframe title="Countries with most # of endangered species"
+                                aria-label="a column chart shows the highest numbers of endangered species from left to right"
+                                id="datawrapper-chart-TXGlI" src="https://datawrapper.dwcdn.net/TXGlI/1/" scrolling="no"
+                                frameborder="0" style="width: 0; min-width: 100% !important; border: none;"
+                                height="400"></iframe>
+                            <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                            </script>
+                        </div>
+
+                        <div class="graph-i">
+                            <iframe title="Numbers of endangered bird species by country "
+                                aria-label="a map use colors to show numbers of endangered species by country "
+                                id="datawrapper-chart-sJg21" src="https://datawrapper.dwcdn.net/sJg21/1/" scrolling="no"
+                                frameborder="0" style="width: 0; min-width: 100% !important; border: none;"
+                                height="367"></iframe>
+                            <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                            </script>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!--Animal Extinction Fun Facts-->
+                <section class="animals">
+
+                    <div class="container">
+                        <h2>These animals are critically endangered!!!</h2>
+                    </div>
+
+                    <div class="animal-c">
+                        <div class="animal-i">
+                            <img src="img/panda.jpg" alt="a picture of panda climbing in a tree">
+                            <h3 class="animal-title">Pandas</h3>
+                            <p class="animal-text">There are only 1,864 pandas left in the world!</p>
+                            <a href="#panda"><button type="button">Learn More</button></a>
+                        </div>
+
+                        <div class="animal-i">
+                            <img src="img/blackrhino.jpg" alt="a picture of black rhino walking on grass">
+                            <h3 class="animal-title">Black Rhinos</h3>
+                            <p class="animal-text">There are only 5,600 Black Rhinos left in the world!</p>
+                            <a href="#blackrhino"><button type="button">Learn More</button></a>
+                        </div>
+
+                        <div class="animal-i">
+                            <img src="img/redpanda.jpg" alt="a picture of red panda climbing in a tree">
+                            <h3 class="animal-title">Red Pandas</h3>
+                            <p class="animal-text">There are only less than 10,000 Red Pandas left in the world!</p>
+                            <a href="#redpanda"><button type="button">Learn More</button></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2022 University of Washington - The Information School</p>
+
+            </div>
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>

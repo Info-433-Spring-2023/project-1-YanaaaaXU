@@ -1,0 +1,22 @@
+h1 {
+    color: #54441b;
+    background-color: #eee;
+    font-weight: 300;
+}
+
+li {
+    Padding: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    Width: 50%;
+}
+
+p, h2 {
+    padding: .5em;
+    font-family: 'Times New Roman', sans-seriff;
+    margin-left: auto;
+    margin-right: auto;
+    Width: 50%;
+}
+
+
