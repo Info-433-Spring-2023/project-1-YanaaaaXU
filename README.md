@@ -11,3 +11,11 @@ UML Class Diagram
   alt="Alt text"
   title="UML Class Diagram"
   style="display: inline-block; margin: 0 auto; max-width: 500px">
+
+UML Sequence Diagram
+
+<img
+  src="images/uml sequence diagram.jpg"
+  alt="Alt text"
+  title="UML sequence Diagram"
+  style="display: inline-block; margin: 0 auto; max-width: 500px">
