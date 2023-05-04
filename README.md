@@ -19,3 +19,14 @@ UML Sequence Diagram
   alt="Alt text"
   title="UML sequence Diagram"
   style="display: inline-block; margin: 0 auto; max-width: 500px">
+  
+**P3 checkpoint #3: Automated Tests**
+This Jest test suite is created for a React Search component. The suite comprises tests for three major functions: hitting the 'Go!' button, picking an item from the drop-down menu, and checking the 'Data Type' checkbox.
+The first test series determines if the 'Go!' button is visible on the screen and whether it invokes the 'applyFilterCallback' method with the appropriate parameters. The second set of tests verifies that the drop-down menu is shown correctly and that it displays no choices when the passed array is empty. The last set of tests determines if the 'Data Type' checkbox is unchecked by default and whether clicking it affects the 'applyFilterCallback' function.
+All tests use the '@testing-library/react' library to render the Search component. Interact with the Search component using user events like 'click' and 'change,' to see if the anticipated results have been returned. Jest has assertions for determining if the predicted output of functions corresponds to the actual output.
+These tests are designed to ensure that the Search component renders the necessary UI components, that user interactions function as anticipated, and that state changes caused by these interactions are handled effectively. The tests assist developers in detecting and correcting errors before release, resulting in higher-quality software with fewer defects.
+<img
+  src="images/test.jpg"
+  alt="Alt text"
+  title="test"
+  style="display: inline-block; margin: 0 auto; max-width: 500px">
