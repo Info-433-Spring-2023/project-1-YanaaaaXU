@@ -138,7 +138,7 @@ Other than the criterias, here is a list of the architectural deficiencies I hav
 
 To address these problems, we can consider several possible solutions. For the code smells and documentation concerns, we can add inline comments and refactor the code to remove any unused state initialization. We can also ensure that our variable names are consistent with standard naming conventions. On top of that we will also consider restructuring the component to be more modular and easier to maintain to address the modifiability and testability problems. We can also expose more functions as props or consider re-writing the component using a different design pattern that separates concerns more effectively. Finally, we can consider writing more automated tests to improve test coverage and ensure the component functions as expected.
 
-Overall, the Search component has several architectural problems that should be addressed to improve the maintainability and testability of the code. By refactoring and restructuring the component, we can make it easier to maintain, test, and ensure that it conforms to standard design practices and naming conventions.the component using a different design pattern that separates concerns more effectively. 
+Overall, the Search component has several architectural problems that should be addressed to improve the maintainability and testability of the code. By refactoring and restructuring the component, we can make it easier to maintain, test, and ensure that it conforms to standard design practices and naming conventions.the component using a different design pattern that separates concerns more effectively.
 
 # Automated Tests
 This Jest test suite is created for a React Search component. The suite comprises tests for three major functions: hitting the 'Go!' button, picking an item from the drop-down menu, and checking the 'Data Type' checkbox.
@@ -147,7 +147,7 @@ All tests use the '@testing-library/react' library to render the Search componen
 These tests are designed to ensure that the Search component renders the necessary UI components, that user interactions function as anticipated, and that state changes caused by these interactions are handled effectively. The tests assist developers in detecting and correcting errors before release, resulting in higher-quality software with fewer defects.
 
 **Test Suite Instructions**
-The tests for this project can be found in the tests directory, specifically under the Search.test.js file. To run the test suite, follow these instructions: 
+The tests for this project can be found in the tests directory, specifically under the Search.test.js file. To run the test suite, follow these instructions:
 Ensure that you have Node.js and npm installed on your machine. If not, you can download and install them from Node.js official website.
 In the terminal, navigate to the project root directory and run npm install to install all the necessary dependencies.
 Run the command npm run test to execute the test suite. The results will be displayed in the terminal.
@@ -175,4 +175,3 @@ Here is a list of the test cases along with a brief justification for each:
 - SelectSpecies updates the state of the species select correctly: Verifies the state updates based on user input.
 
 # Refactoring the Code
-
