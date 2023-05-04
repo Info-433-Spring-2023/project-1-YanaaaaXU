@@ -1,13 +1,47 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10783008&assignment_repo_type=AssignmentRepo)
-**Report**
-Our codebase is provided by Michelle and her INFO340 team. This is a React app. The website is about endangered animals. The aim of this project is to spread awareness of animals that are endangered. Pulling data from various sources we have prepared graphs that will give people answers to what is going with these animals.
+**Code Structure Analysis**
 
-**P1 checkpoint #2: structure diagrams**
+The purpose of our React website is to provide statistical information that helps audiences understand extinct animals and raise awareness to protect them. There are three functions of the website: an interactive dashboard, mini flashcard games, and personal impact quizzes. In addition to three functions, there is an About page that introduces our teammates and the purpose of the project. All of our components were built based on these three functionality of the website.
+
+- **Interactive Dashboard:** This component displays statistical information about extinct animals based on the user’s selection and filter.
+
+- **Mini Flashcard Game:** This component would randomly present an animal card with the number of animal species left. It is built using react components handleClick, card, and props.
+
+- **Personal Impact Quiz:** This component presents a list of multiple choice questions for users to select. It tests users' general habits and how these habits can impact the planet. The component imports two libraries: React and Firebase and functions like “getDatabase”, “ref”, “set”, “onValue”, and “push”, to get access to the database.
+
+- **About page:** This component would introduce the purpose of the project and our mission and a short description of each member. It consists AboutCards.js, with team member’s names and images, and a react library.
+
+In addition to these components, there are other components that work as a part of the website, such as Footer, Header, and Introduction. Additionally, JSON files are used to pass data into the database and modules.
+
+**Relationships/dependencies**
+
+App.js is the root component that serves as the foundation for the entire React application, and all other components are connected.
+
+The HomePage component imports the following components to create a comprehensive landing page:
+
+- Counter component, which further imports:
+  -  InfoCards component for a collection of statistics
+- Search component for filtering and finding specific endangered species
+- Intro component introduces the goal of the website and guides users to take actions
+- Counts display a visual representation of the endangered species data
+
+
+Other components are directly connected to App.js, each serving a specific purpose within the application:
+- Header component for displaying the application's title and navigation menu
+- MiniGame component for engaging users with interactive games related to endangered species
+- PersonalImpact component to educate users on how their actions can affect endangered species
+- KnowledgeQuiz component for testing users' knowledge of endangered species and conservation efforts
+- Footer component to display additional information
+
+
+The About component is also connected to App.js and imports the following child components to present more information about the project and the team behind it:
+
+- AboutCards component for displaying details about the project's mission and goals
+- Team component to showcase the team members and their roles in the project
 
 UML Class Diagram
 
 <img
-  src="images/UML-Class-Diagram.jpg"
+  src="./images/UML-Class-Diagram.jpg"
   alt="Alt text"
   title="UML Class Diagram"
   style="display: inline-block; margin: 0 auto; max-width: 500px">
@@ -15,18 +49,54 @@ UML Class Diagram
 UML Sequence Diagram
 
 <img
-  src="images/uml sequence diagram.jpg"
+  src="./images/uml sequence diagram.jpg"
   alt="Alt text"
   title="UML sequence Diagram"
   style="display: inline-block; margin: 0 auto; max-width: 500px">
-  
-**P3 checkpoint #3: Automated Tests**
-This Jest test suite is created for a React Search component. The suite comprises tests for three major functions: hitting the 'Go!' button, picking an item from the drop-down menu, and checking the 'Data Type' checkbox.
-The first test series determines if the 'Go!' button is visible on the screen and whether it invokes the 'applyFilterCallback' method with the appropriate parameters. The second set of tests verifies that the drop-down menu is shown correctly and that it displays no choices when the passed array is empty. The last set of tests determines if the 'Data Type' checkbox is unchecked by default and whether clicking it affects the 'applyFilterCallback' function.
-All tests use the '@testing-library/react' library to render the Search component. Interact with the Search component using user events like 'click' and 'change,' to see if the anticipated results have been returned. Jest has assertions for determining if the predicted output of functions corresponds to the actual output.
-These tests are designed to ensure that the Search component renders the necessary UI components, that user interactions function as anticipated, and that state changes caused by these interactions are handled effectively. The tests assist developers in detecting and correcting errors before release, resulting in higher-quality software with fewer defects.
-<img
-  src="images/test.jpg"
-  alt="Alt text"
-  title="test"
-  style="display: inline-block; margin: 0 auto; max-width: 500px">
+
+**Code's process flows**
+
+The process flows of our React-based website involve a series of interconnected components working together to provide users with an educational and interactive user experience. The main process flows include rendering the HomePage, interacting with the Dashboard, playing the Mini Flashcard Game, taking the Personal Impact Quiz, and visiting the About Page.
+
+**Rendering the HomePage:**
+a. App.js serves as the root component and renders the HomePage component.
+
+b. HomePage calles and displays the Counter, Search, Intro, and Counts components.
+
+c. The Counter component further imports and displays InfoCard and InfoCards components.
+
+d. The Header and Footer components are rendered on every page.
+
+**Interacting with the Dashboard:**
+
+a. Users can filter endangered species data using the Search component.
+
+b. The Search component updates the state of the selected country, species, and data type.
+
+c. Once the filter is applied, the Counter component updates the displayed InfoCard and InfoCards components based on user selections.
+
+**Playing the Mini Flashcard Game:**
+
+a. Users access the MiniGame component from the navigation menu.
+
+b. The game presents animal cards with the number of remaining species.
+
+c. Users interact with the game by clicking on cards, which triggers the handleClick event.
+
+**Taking the Personal Impact Quiz:**
+
+a. Users access the PersonalImpact component from the navigation menu.
+
+b. The quiz presents multiple-choice questions related to the user's habits and their potential impact on the environment.
+
+c. Users submit their answers, which are stored in the Firebase database using functions like "getDatabase", "ref", "set", "onValue", and "push".
+
+**Visiting the About Page:**
+
+a. Users access the About component from the navigation menu.
+
+b. The About component imports and displays the AboutCards and Team components.
+
+c. AboutCards provides information about the project's mission and goals, while the Team component showcases individual team members and their roles.
+
+Throughout this process flows, the website maintains a consistent look and feels by rendering the Header and Footer components on every page. The seamless integration of these components ensures an intuitive and engaging user experience while navigating through different sections of the website.
