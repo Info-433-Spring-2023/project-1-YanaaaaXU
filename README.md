@@ -1,4 +1,4 @@
-**Code Structure Analysis**
+# Code Structure Analysis
 
 The purpose of our React website is to provide statistical information that helps audiences understand extinct animals and raise awareness to protect them. There are three functions of the website: an interactive dashboard, mini flashcard games, and personal impact quizzes. In addition to three functions, there is an About page that introduces our teammates and the purpose of the project. All of our components were built based on these three functionality of the website.
 
@@ -100,3 +100,21 @@ b. The About component imports and displays the AboutCards and Team components.
 c. AboutCards provides information about the project's mission and goals, while the Team component showcases individual team members and their roles.
 
 Throughout this process flows, the website maintains a consistent look and feels by rendering the Header and Footer components on every page. The seamless integration of these components ensures an intuitive and engaging user experience while navigating through different sections of the website.
+
+
+# Architecture Assessment
+
+Architectural com appears to have a few architectural problems in the provided code, including code smells, documentation concerns, and design quality deficiencies. These issues are as follows:
+
+Code Smells:
+
+- Useless state initialization: The selectCountry, selectSpecies, and selectDataType variables are declared using useState, but their initial values are never used. This is a code smell that suggests the possibility of refactoring or improvement. These unused initial values can clutter the code and make it harder to understand, modify, and maintain.
+
+- Duplicate code: The Search and Results components contain similar codes for handling the search functionality. This is a code smell that suggests the possibility of refactoring or improvement. Duplicated code can lead to maintenance issues, as changes need to be made in multiple places, making the code harder to maintain.
+
+- Inconsistent variable naming: The variable names used in the code need to be more consistent, making it harder to read and understand. For example, some variables use the CamelCase naming convention, while others use the camelCase naming convention. This is a code smell that suggests the possibility of refactoring or improvement. Consistent variable naming can make the code more readable and easier to understand.
+
+Documentation/Readability Concerns:
+- Lack of documentation: The code needs documentation, which makes it easier for other developers to understand and maintain the code. Comments and inline documentation can be added to explain what each function does or what the component is used for.
+
+- Poorly written comments: Some of the comments in the code could be clearer or more accurate, making it easier to understand the code. For example, the comment "Set species variable on change" in the Search component does not provide enough context to understand what is happening in the code.
