@@ -38,21 +38,22 @@ The About component is also connected to App.js and imports the following child 
 - AboutCards component for displaying details about the project's mission and goals
 - Team component to showcase the team members and their roles in the project
 
-UML Class Diagram
-
+Figure 1: UML Class Diagram
 <img
   src="./images/UML-Class-Diagram.jpg"
   alt="Alt text"
   title="UML Class Diagram"
   style="display: inline-block; margin: 0 auto; max-width: 500px">
 
-UML Sequence Diagram
+
+Figure 2: UML Sequence Diagram
 
 <img
   src="./images/uml sequence diagram.jpg"
   alt="Alt text"
   title="UML sequence Diagram"
   style="display: inline-block; margin: 0 auto; max-width: 500px">
+
 
 **Code's process flows**
 
@@ -147,6 +148,7 @@ All tests use the '@testing-library/react' library to render the Search componen
 These tests are designed to ensure that the Search component renders the necessary UI components, that user interactions function as anticipated, and that state changes caused by these interactions are handled effectively. The tests assist developers in detecting and correcting errors before release, resulting in higher-quality software with fewer defects.
 
 **Test Suite Instructions**
+
 The tests for this project can be found in the tests directory, specifically under the Search.test.js file. To run the test suite, follow these instructions:
 Ensure that you have Node.js and npm installed on your machine. If not, you can download and install them from Node.js official website.
 In the terminal, navigate to the project root directory and run npm install to install all the necessary dependencies.
