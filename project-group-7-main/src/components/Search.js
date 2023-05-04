@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 export function Search(props) {
 
     let selectCountry = useState("Australia");
@@ -51,6 +52,8 @@ export function Search(props) {
                             <label htmlFor="specie">Select a specific specie: </label>
                             <select name="specie" id="select_2" onChange={selectASpecie} value={selectSpecies[0]}>
                                 <SearchOptions options={props.speciesOptions} />
+
+
                             </select>
                         </div>
                     </div>
@@ -74,9 +77,11 @@ export function Search(props) {
 
     );
 }
+
 export function SearchOptions(props) {
     return props.options.map((element) => {
         return <option key={element} value={element}>{element}</option>
     })
 }
+
 
