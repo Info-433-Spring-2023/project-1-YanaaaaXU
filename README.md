@@ -14,7 +14,7 @@ In addition to these components, there are other components that work as a part 
 
 **Relationships/dependencies**
 
-App.js is the root component that serves as the foundation for the entire React application, and all other components are connected.
+Based on the Figure 1's UML class diagram, we can see that App.js is the root component that serves as the foundation for the entire React application, and all other components are connected.
 
 The HomePage component imports the following components to create a comprehensive landing page:
 
@@ -37,6 +37,8 @@ The About component is also connected to App.js and imports the following child 
 
 - AboutCards component for displaying details about the project's mission and goals
 - Team component to showcase the team members and their roles in the project
+
+
 
 Figure 1: UML Class Diagram
 <img
@@ -178,4 +180,12 @@ Here is a list of the test cases along with a brief justification for each:
 
 # Refactoring the Code
 
-The code has been refactored by replacing the let statements with useState and using destructuring assignment to retrieve the values. The variable names have also been updated to make them more descriptive. The event handlers have been simplified to update the state using the set function. The handleButton function has been updated to use the state variables instead of the selectCountry, selectSpecies, and selectDataType variables. The refactored code retains the same functionality as the original code but is more concise and easier to read.
+The code has been refactored by replacing the let statements with useState and using destructuring assignment to retrieve the values. The variable names have also been updated to make them more descriptive. The event handlers have been simplified to update the state using the set function. The handleButton function has been updated to use the state variables instead of the selectCountry, selectSpecies, and selectDataType variables. The refactored code retains the same functionality as the original code but is more concise and easier to read. A part of the refactored code is demonstrated below(Figure 3). For the complete refactored Search.js component, please refer to the Search.js file.
+
+Figure 3: Part of refactor Search.js
+
+<img
+  src="./images/refactor-search.png"
+  alt="Alt text"
+  title="Refactor Search"
+  style="display: inline-block; margin: 0 auto; max-width: 500px">
