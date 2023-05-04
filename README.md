@@ -14,7 +14,7 @@ In addition to these components, there are other components that work as a part 
 
 **Relationships/dependencies**
 
-Based on the Figure 1's UML class diagram, we can see that App.js is the root component that serves as the foundation for the entire React application, and all other components are connected.
+Based on the Figure 1's UML class diagram, we can see that App.js is the root component that serves as the foundation for the entire React application, and all other components are connected (Figure 1).
 
 The HomePage component imports the following components to create a comprehensive landing page:
 
@@ -45,15 +45,6 @@ Figure 1: UML Class Diagram
   src="./images/UML-Class-Diagram.jpg"
   alt="Alt text"
   title="UML Class Diagram"
-  style="display: inline-block; margin: 0 auto; max-width: 500px">
-
-
-Figure 2: UML Sequence Diagram
-
-<img
-  src="./images/uml sequence diagram.jpg"
-  alt="Alt text"
-  title="UML sequence Diagram"
   style="display: inline-block; margin: 0 auto; max-width: 500px">
 
 
@@ -104,6 +95,15 @@ c. AboutCards provides information about the project's mission and goals, while 
 
 Throughout this process flows, the website maintains a consistent look and feels by rendering the Header and Footer components on every page. The seamless integration of these components ensures an intuitive and engaging user experience while navigating through different sections of the website.
 
+Additionally, we have created a UML sequence diagram (Figure 2) to illustrate the interactions between pages and how data flows between them, as well as capturing user interactions within each page.
+
+Figure 2: UML Sequence Diagram
+
+<img
+  src="./images/uml sequence diagram.jpg"
+  alt="Alt text"
+  title="UML sequence Diagram"
+  style="display: inline-block; margin: 0 auto; max-width: 500px">
 
 # Architecture Assessment
 
