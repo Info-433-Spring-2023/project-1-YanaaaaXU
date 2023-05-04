@@ -177,3 +177,5 @@ Here is a list of the test cases along with a brief justification for each:
 - SelectSpecies updates the state of the species select correctly: Verifies the state updates based on user input.
 
 # Refactoring the Code
+
+The code has been refactored by replacing the let statements with useState and using destructuring assignment to retrieve the values. The variable names have also been updated to make them more descriptive. The event handlers have been simplified to update the state using the set function. The handleButton function has been updated to use the state variables instead of the selectCountry, selectSpecies, and selectDataType variables. The refactored code retains the same functionality as the original code but is more concise and easier to read.
